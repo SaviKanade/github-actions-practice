@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Current date & time detail
-        run : datess
+        run : date
 
       - name: Branch name
         run: echo '${{ github.ref_name }}'
