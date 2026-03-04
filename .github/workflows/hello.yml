@@ -27,5 +27,5 @@ jobs:
         run: ls -la
 
       - name: runner operating system
-        run: echo "cat /etc/os-release"
+        run: cat /etc/os-release
         
