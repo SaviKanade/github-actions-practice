@@ -14,5 +14,18 @@ jobs:
       - name: Greeting to a user 
         run: echo "Hello from GitHub Actions!"
 
+  current_details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Current date & time detail
+        run : echo 'date'
 
-      
+      - name: Branch name
+        run: echo '${{ github.ref_name }}'
+
+      - name: list the files in repo
+        run: ls -la
+
+      - name: runner operating system
+        run: echo "cat /etc/os-release"
+        
