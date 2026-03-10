@@ -1,0 +1,19 @@
+name: manual-work
+
+on: 
+  workflow_dispatch: 
+    inputs:
+      environment: 
+        description: These are the enviornment list. Select one
+        type: choice
+        options: 
+          - production
+            staging
+          
+
+jobs:
+  manual-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Environment name
+        run: ${{ inputs.environment }}
