@@ -11,6 +11,8 @@ jobs:
         python-version: ["3.11", "3.12", "3.13"]
     steps:
       - name: Install python
-        run: sudo apt-get install python && python -v
+        run: |
+          sudo apt install -y python3
+          python -v
 
     
