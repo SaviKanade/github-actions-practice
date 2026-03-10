@@ -1,0 +1,16 @@
+name: Install-python-versions
+
+on:
+  workflow_dispatch
+
+jobs:
+  py-version:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: 
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - name: Install python
+        run: sudo apt-get update && sudo apt-get install python && python -v
+
+    
