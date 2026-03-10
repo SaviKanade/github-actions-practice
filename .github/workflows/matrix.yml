@@ -6,19 +6,16 @@ on:
 
 jobs:
   py-version:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix: 
-        include:
-          - inputs:
-            - true 
-            
-              
+        os: ["ubuntu-latest", "macos-latest"]
         python-version: ["3.11", "3.12", "3.13"]
     steps:
       - name: Install python
         run: |
-          sudo apt install -y python3
+          echo ${{ matrix.os }}
+          sudo apt install -y python${{ matrix.python-version }}
           python -v
 
     
