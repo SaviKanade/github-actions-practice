@@ -1,5 +1,0 @@
-
-fastapi
-uvicorn
-psutil
-boto3
