@@ -1,0 +1,17 @@
+name: python-versions
+
+on:
+  push: 
+    branches: [main]
+
+jobs:
+  py-version:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: 
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - name: Print hello
+        run: echo "Hello Dosto ${{ matrix.python-version }}"
+
+    
