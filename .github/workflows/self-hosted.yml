@@ -1,0 +1,16 @@
+name: test-self-hosted
+
+on: workflow_dispatch
+
+jobs:
+  selfhost-test:
+    runs-on: self-hosted
+    steps:
+      - name: Print the hostname of YOUR machine
+        run: hostname
+
+      - name: Print the working directory 
+        run: pwd
+
+      - name: Create a file 
+        run: touch test.txt
