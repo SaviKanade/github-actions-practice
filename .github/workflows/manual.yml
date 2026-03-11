@@ -14,7 +14,7 @@ on:
 
 jobs:
   manual-task:
-    runs-on: ubuntu-latest
+    runs-on: my-linux-runner
     steps:
       - name: Environment name
         run: echo ${{ inputs.environment }}
