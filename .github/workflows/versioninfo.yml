@@ -1,0 +1,19 @@
+---
+name: versioninfo
+
+'on': workflow-disptach
+
+jobs:
+  version-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Shows versions info
+        run: |
+          echo "Docker version"
+          docker -v
+          echo "Python version"
+          python -v
+          echo " Node version"
+          node -v
+          echo "git version"
+          git -v
