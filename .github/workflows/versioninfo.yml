@@ -1,8 +1,7 @@
----
 name: versioninfo
 
 on: 
-  workflow-disptach
+  workflow-disptach:
 
 jobs:
   version-info:
