@@ -1,8 +1,7 @@
 name: docker-build-push-cicd
 
 on:  
-  push:
-    branches: [main]
+  workflow_dispatch: 
 
 jobs:
   build-push:
@@ -28,6 +27,6 @@ jobs:
           push: true
           tags: 
           # Your image name will be savikanade/github-actions-app:latest
-            $ {{ vars.DOCKERHUB_USER }}/github-actions-app:latest
+            ${{ vars.DOCKERHUB_USER }}/github-actions-app:latest
             
             
