@@ -1,6 +1,5 @@
----
 name: day40
-'on':
+on:
   workflow_disptach:
 jobs:
   envtasks:
