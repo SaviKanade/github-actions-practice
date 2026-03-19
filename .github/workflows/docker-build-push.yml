@@ -27,6 +27,6 @@ jobs:
           push: true
           tags: 
           # Your image name will be savikanade/github-actions-app:latest
-            $ {{ vars.DOCKERHUB_USER }}/github-actions-app:latest
+            ${{ vars.DOCKERHUB_USER }}/github-actions-app:latest
             
             
