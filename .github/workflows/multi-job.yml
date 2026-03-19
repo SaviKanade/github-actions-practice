@@ -1,6 +1,5 @@
 name: day40
-on:
-  workflow_disptach:
+on: workflow_dispatch
 jobs:
   envtasks:
     runs-on: ubuntu_latest
